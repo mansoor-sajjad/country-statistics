@@ -1,0 +1,14 @@
+POST /ws HTTP/1.1
+Host: localhost:8080
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:tns="http://hukkah.com/producing-web-service">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <tns:getCountryRequest>
+            <tns:name>Norway</tns:name>
+        </tns:getCountryRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
